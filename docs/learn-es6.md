@@ -193,6 +193,11 @@ a === undefined;
 // Fail-soft destructuring with defaults
 var [a = 1] = [];
 a === 1;
+
+// Destructuring + default arguments
+function getRect({x = 0, y = 0, w = 0, h = 0}) {
+  console.log(x, y, w, h);
+}
 ```
 
 ### Default + Rest + Spread
